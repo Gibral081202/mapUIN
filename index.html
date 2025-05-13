@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navigasi Kampus UIN Jakarta</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h1>Navigasi Kampus UIN Syarif Hidayatullah Jakarta</h1>
+  <div class="controls">
+    <label for="start">Pilih Titik Asal:</label>
+    <select id="start"></select>
+
+    <label for="end">Pilih Tujuan:</label>
+    <select id="end"></select>
+
+    <label for="mode">Mode Transportasi:</label>
+    <select id="mode">
+      <option value="foot-walking">Jalan Kaki</option>
+      <option value="driving-car">Kendaraan</option>
+    </select>
+
+    <button id="routeBtn">Tampilkan Rute</button>
+  </div>
+  <div id="map"></div>
+  <div id="info"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
